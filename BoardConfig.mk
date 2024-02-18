@@ -95,6 +95,7 @@ TARGET_USES_MKE2FS := true
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
+BOARD_ROOT_EXTRA_FOLDERS += metadata
 
 # System as root
 BOARD_SUPPRESS_SECURE_ERASE := true
