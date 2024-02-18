@@ -33,14 +33,14 @@ load_gale()
 {
     echo "I:Variant-Script: Loaded gale variant" | tee -a $LOG_PATH
     setdevicename "gale"
-    setdevicemodel "22101316UCP"
+    setdevicemodel "Redmi 13C"
 }
 
 load_gust()
 {
     echo "I:Variant-Script: Loaded ruby variant" | tee -a $LOG_PATH
     setdevicename "gust"
-    setdevicemodel "22101316G"
+    setdevicemodel "POCO C64"
 }
 
 variant=$(resetprop ro.boot.hwname)
