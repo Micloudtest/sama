@@ -43,21 +43,21 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 	  	# Version / Maintainer infos
 		export OF_MAINTAINER="Tapin Recovery Instraller"
 		export FOX_VERSION=R12.1_0
-  	export FOX_VARIANT=Beta
+  		export FOX_VARIANT=Beta
 		export FOX_BUILD_TYPE="Unofficial"
-    export FOX_TARGET_DEVICES="gale,gust"
-	  export TARGET_DEVICE_ALT="gale"
-	  export LC_ALL="C"
+    		export FOX_TARGET_DEVICES="gale,gust"
+	  	export TARGET_DEVICE_ALT="gale"
+	  	export LC_ALL="C"
 
 	 	# Magiskboot
-	  export OF_USE_MAGISKBOOT=1
+	  	export OF_USE_MAGISKBOOT=1
 	 	export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
   
  		# OTA / DM-Verity / Encryption
-    export OF_SUPPORT_ALL_PAYLOAD_OTA_UPDATES=1
+    		export OF_SUPPORT_ALL_PAYLOAD_OTA_UPDATES=1
 		export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
 		export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1	
-    export OF_NO_MIUI_PATCH_WARNING=1
+    		export OF_NO_MIUI_PATCH_WARNING=1
 
 		export OF_DONT_PATCH_ON_FRESH_INSTALLATION=1
 		export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
@@ -76,34 +76,34 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 		#export OF_FL_PATH1="/tmp/flashlight" # See /init.recovery.mt6768.rc for more information
 
   		# Binaries
-    export FOX_USE_BASH_SHELL=1
-    export FOX_ASH_IS_BASH=1
-    export FOX_USE_NANO_EDITOR=1
-    export FOX_USE_GREP_BINARY=1
-    export FOX_USE_TAR_BINARY=1
-    export FOX_USE_ZIP_BINARY=1
+    		export FOX_USE_BASH_SHELL=1
+    		export FOX_ASH_IS_BASH=1
+    		export FOX_USE_NANO_EDITOR=1
+    		export FOX_USE_GREP_BINARY=1
+    		export FOX_USE_TAR_BINARY=1
+    		export FOX_USE_ZIP_BINARY=1
 		export FOX_USE_BRX_BINARY=1
-    export FOX_USE_SED_BINARY=1
-    export FOX_USE_XZ_UTILS=1
-    export FOX_REPLACE_BUSYBOX_PS=1
-    export OF_ENABLE_LPTOOLS=1
+    		export FOX_USE_SED_BINARY=1
+    		export FOX_USE_XZ_UTILS=1
+    		export FOX_REPLACE_BUSYBOX_PS=1
+    		export OF_ENABLE_LPTOOLS=1
 
 		# Ensure that /sdcard is bind-unmounted before f2fs data repair or format
  		export OF_UNBIND_SDCARD1_F2FS=1
 
 	 	# Metadata encription
-   	export OF_FBE_METADATA_MOUNT_IGNORE=1
+   		export OF_FBE_METADATA_MOUNT_IGNORE=1
 
-	  # Removes the loop block errors after flashing ZIPs (Workaround) 
+	  	# Removes the loop block errors after flashing ZIPs (Workaround) 
 		export OF_IGNORE_LOGICAL_MOUNT_ERRORS=1
 		export OF_LOOP_DEVICE_ERRORS_TO_LOG=1
 
 		# Other OrangeFox configs
 		export OF_ALLOW_DISABLE_NAVBAR=0
 		export FOX_DELETE_AROMAFM=1
-  	export FOX_DELETE_MAGISK_ADDON=1
-
-	  # Backup
+  		export FOX_DELETE_MAGISK_ADDON=1
+	
+	  	# Backup
 		export OF_USE_TWRP_SAR_DETECT=1
 		export FOX_REPLACE_TOOLBOX_GETPROP=1
 
