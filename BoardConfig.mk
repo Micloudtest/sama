@@ -104,7 +104,6 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
-TW_HAS_NO_RECOVERY_PARTITION := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
 # Properties
