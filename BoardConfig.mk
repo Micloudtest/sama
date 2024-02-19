@@ -122,9 +122,6 @@ ifneq ($(OF_HIDE_NOTCH),1)
     TW_CUSTOM_BATTERY_POS := "790"
 endif
 
-# UEFI
-TARGET_USES_UEFI := true
-
 # VNDK Treble
 BOARD_VNDK_VERSION := current
 
