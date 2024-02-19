@@ -24,8 +24,8 @@
         manifest_nwk_opt.xml
         manifest_composer.xml
         manifest_target_level_r.xml
-        manifest.xml
         manifest_displayfeature.xml
+        manifest.xml     
 -->
 <manifest version="4.0" type="device" target-level="5">
     <hal format="hidl">
