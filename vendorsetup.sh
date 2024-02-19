@@ -23,17 +23,17 @@ FDEVICE="gale"
 #set -o xtrace
 
 fox_get_target_device() {
-	local chkdev=$(echo "$BASH_SOURCE" | grep -w $FDEVICE)
-	if [ -n "$chkdev" ]; then
-		FOX_BUILD_DEVICE="$FDEVICE"
-	else
-		chkdev=$(set | grep BASH_ARGV | grep -w $FDEVICE)
-		[ -n "$chkdev" ] && FOX_BUILD_DEVICE="$FDEVICE"
-	fi
+ local chkdev=$(echo "$BASH_SOURCE" | grep -w $FDEVICE)
+ if [ -n "$chkdev" ]; then
+  FOX_BUILD_DEVICE="$FDEVICE"
+ else
+  chkdev=$(set | grep BASH_ARGV | grep -w $FDEVICE)
+  [ -n "$chkdev" ] && FOX_BUILD_DEVICE="$FDEVICE"
+ fi
 }
 
 if [ -z "$1" ] && [ -z "$FOX_BUILD_DEVICE" ]; then
-	fox_get_target_device
+  fox_get_target_device
 fi
 
 # Dirty Fix: Only declare orangefox vars when needed
