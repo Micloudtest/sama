@@ -38,16 +38,15 @@ fi
 
 # Dirty Fix: Only declare orangefox vars when needed
 if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
-	echo -e "\x1b[96m[INFO]: Setting up OrangeFox build vars for rosemary...\x1b[m"
-	if [ "$1" = "$FDEVICE" ] || [  "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
-	  	
+	echo -e "\x1b[96m[INFO]: Setting up OrangeFox build vars for gale...\x1b[m"
+	if [ "$1" = "$FDEVICE" ] || [  "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then	  	
 
 # Version / Maintainer infos
-export OF_MAINTAINER=Tapin Recovery Instraller
-export FOX_VERSION=R12.1_0
-export FOX_BUILD_TYPE=Unofficial
-export TARGET_DEVICE_ALT=gale
-export FOX_TARGET_DEVICES=gale,gust
+export OF_MAINTAINER="Tapin Recovery Instraller"
+export FOX_VERSION="R12.1_0"
+export FOX_BUILD_TYPE="Unofficial"
+export TARGET_DEVICE_ALT="gale"
+export FOX_TARGET_DEVICES="gale,gust"
 export LC_ALL="C"
 
 # Magiskboot
