@@ -85,8 +85,15 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USES_MKE2FS := true
 
+# Metadata
+BOARD_USES_METADATA_PARTITION := true
+BOARD_ROOT_EXTRA_FOLDERS += metadata
+
 # System as root
 BOARD_SUPPRESS_SECURE_ERASE := true
+
+# Use LZ4 Ramdisk compression instead of GZIP
+BOARD_RAMDISK_USE_LZ4 := true
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
@@ -110,6 +117,9 @@ ifneq ($(OF_HIDE_NOTCH),1)
     TW_CUSTOM_CLOCK_POS := "60"
     TW_CUSTOM_BATTERY_POS := "790"
 endif
+
+# UEFI
+TARGET_USES_UEFI := true
 
 # VNDK Treble
 BOARD_VNDK_VERSION := current
