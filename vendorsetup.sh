@@ -42,11 +42,11 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 	if [ "$1" = "$FDEVICE" ] || [  "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then	  	
 
 # Version / Maintainer infos
-export FOX_VERSION="R12.1_1"
-export FOX_BUILD_TYPE="Unofficial"
-export TARGET_DEVICE_ALT="gale"
-export FOX_TARGET_DEVICES="gale,gust"
 export OF_MAINTAINER="Tapin Recovery Instraller"
+export FOX_VERSION=R12.1_0
+export FOX_BUILD_TYPE="Unofficial"
+export FOX_TARGET_DEVICES="gale,gust"
+export TARGET_DEVICE_ALT="gale"
 export LC_ALL="C"
 
 # Magiskboot
@@ -89,7 +89,7 @@ export FOX_REPLACE_BUSYBOX_PS=1
 export OF_ENABLE_LPTOOLS=1
 
 # Ensure that /sdcard is bind-unmounted before f2fs data repair or format
-export OF_UNBIND_SDCARD1_F2FS=1
+export OF_UNBIND_SDCARD_F2FS=1
 
 # Metadata encription
 export OF_FBE_METADATA_MOUNT_IGNORE=1
