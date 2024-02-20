@@ -7,9 +7,6 @@
 
 DEVICE_PATH := device/xiaomi/gale
 
-# APEX
-DEXPREOPT_GENERATE_APEX_IMAGE := true
-
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
@@ -56,9 +53,6 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_RAMDISK_OFFSET := 0x07c08000
 BOARD_KERNEL_TAGS_OFFSET := 0x0bc08000
 
-# Clang
-TARGET_KERNEL_CLANG_COMPILE := true
-
 # Kernel - prebuilt
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
@@ -94,13 +88,9 @@ TARGET_USES_MKE2FS := true
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
-BOARD_ROOT_EXTRA_FOLDERS += metadata
 
 # System as root
 BOARD_SUPPRESS_SECURE_ERASE := true
-
-# Use LZ4 Ramdisk compression instead of GZIP
-BOARD_RAMDISK_USE_LZ4 := true
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
@@ -146,8 +136,6 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 TW_INCLUDE_REPACKTOOLS := true
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_LIBRESETPROP := true
-TW_INCLUDE_LPDUMP := true
-TW_INCLUDE_LPTOOLS := true
 
 # TWRP Configuration
 TW_FRAMERATE := 60
