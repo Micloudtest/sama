@@ -25,11 +25,9 @@
         manifest_dmc.xml
         manifest_apmonitor.xml
         manifest_composer.xml
-        manifest.xml
-        manifest.xml
         manifest_target_level_r.xml
         manifest.xml
-        manifest.xml
+        
 -->
 <manifest version="4.0" type="device" target-level="5">
     <hal format="hidl">
