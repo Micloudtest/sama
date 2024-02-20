@@ -3,7 +3,7 @@ export OF_MAINTAINER="Tapin Recovery Instraller"
 export FOX_VERSION=R12.1_0
 export FOX_BUILD_TYPE=Unofficial
 export TARGET_DEVICE_ALT=gale
-export FOX_TARGET_DEVICES=gale,gust
+export FOX_TARGET_DEVICES="gale,gust"
 export LC_ALL="C"
 
 # Magiskboot
