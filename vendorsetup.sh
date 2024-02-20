@@ -42,11 +42,11 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 	if [ "$1" = "$FDEVICE" ] || [  "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then	  	
 
 # Version / Maintainer infos
-export OF_MAINTAINER="Tapin Recovery Instraller"
-export FOX_VERSION=R12.1_1
+export FOX_VERSION="R12.1_1"
 export FOX_BUILD_TYPE="Unofficial"
 export TARGET_DEVICE_ALT="gale"
 export FOX_TARGET_DEVICES="gale,gust"
+export OF_MAINTAINER="Tapin Recovery Instraller"
 export LC_ALL="C"
 
 # Magiskboot
