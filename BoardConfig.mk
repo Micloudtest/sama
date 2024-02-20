@@ -111,13 +111,6 @@ TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 500
 
-ifneq ($(OF_HIDE_NOTCH),1)
-  # Configure Status bar icons for regular TWRP builds only
-    TW_CUSTOM_CPU_POS := "300"
-    TW_CUSTOM_CLOCK_POS := "60"
-    TW_CUSTOM_BATTERY_POS := "790"
-endif
-
 # UEFI
 TARGET_USES_UEFI := true
 
@@ -154,7 +147,6 @@ TW_EXTRA_LANGUAGES := true
 TW_NO_SCREEN_BLANK := true
 TW_SCREEN_BLANK_ON_BOOT := true
 BOARD_HAS_NO_SELECT_BUTTON := true
-TW_EXCLUDE_APEX := true
 RECOVERY_SDCARD_ON_DATA := true
 
 # USB Configuration
