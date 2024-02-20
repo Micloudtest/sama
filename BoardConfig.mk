@@ -7,6 +7,9 @@
 
 DEVICE_PATH := device/xiaomi/gale
 
+# APEX
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
