@@ -18,14 +18,15 @@
 /proinfo            emmc      /dev/block/platform/bootdevice/by-name/proinfo                        flags=display="Proinfo";backup=1;
 
 ## Firmware
-/dtbo               emmc      /dev/block/platform/bootdevice/by-name/dtbo                           flags=slotselect;
-/logo               emmc      /dev/block/platform/bootdevice/by-name/logo                           flags=display="Logo";
-/seccfg             emmc      /dev/block/platform/bootdevice/by-name/seccfg                         flags=display="Seccfg"
-/tee                emmc      /dev/block/platform/bootdevice/by-name/tee                            flags=slotselect;
-/spmfw              emmc      /dev/block/platform/bootdevice/by-name/spmfw                          flags=slotselect;
-/otp                emmc      /dev/block/platform/bootdevice/by-name/otp                            flags=display="Otp"
+/dtbo               emmc      /dev/block/by-name/dtbo                           flags=slotselect;
+/logo               emmc      /dev/block/by-namelogo                           flags=display="Logo";
+/seccfg             emmc      /dev/block/by-name/seccfg                         flags=display="Seccfg"
+/tee                emmc      /dev/block/by-name/tee                            flags=slotselect;
+/spmfw              emmc      /dev/block/by-name/spmfw                          flags=slotselect;
+/otp                emmc      /dev/block/by-name/otp                            flags=display="Otp"
 
-/data               f2fs      /dev/block/platform/bootdevice/by-name/userdata                       flags=fileencryption=aes-256-xts:aes-256-cts:v2,keydirectory=/metadata/vold/metadata_encryption
+/data               f2fs      /dev/block/by-name/by-name/userdata                       flags=fileencryption=aes-256-xts:aes-256-cts:v2,keydirectory=/metadata/vold/metadata_encryption
+/cache              ext4      /dev/block/by-name/rescue                                             flags=display="Cache"
 
 # Removable storage
 /sdcard1            auto       /dev/block/mmcblk1p1   /dev/block/mmcblk1   flags=display="MicroSD";storage;wipeingui;removable;fsflags="utf8"
