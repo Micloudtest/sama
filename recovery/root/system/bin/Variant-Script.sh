@@ -38,7 +38,7 @@ load_gale()
 
 load_gust()
 {
-    echo "I:Variant-Script: Loaded ruby variant" | tee -a $LOG_PATH
+    echo "I:Variant-Script: Loaded gust variant" | tee -a $LOG_PATH
     setdevicename "gust"
     setdevicemodel "POCO C64"
 }
@@ -46,10 +46,10 @@ load_gust()
 variant=$(resetprop ro.boot.hwname)
 
 case $variant in
-    "ruby")
+    "gale")
         load_gale
         ;;
-    "rubypro")
+    "gust")
         load_gust
         ;;
     *)
