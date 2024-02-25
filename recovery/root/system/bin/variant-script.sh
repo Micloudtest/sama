@@ -31,14 +31,14 @@ setdevicemodel() {
 
 load_gale()
 {
-    echo "I:Variant-Script: Loaded gale variant" | tee -a $LOG_PATH
+    echo "I:variant-script: Loaded gale variant" | tee -a $LOG_PATH
     setdevicename "gale"
     setdevicemodel "Redmi 13C"
 }
 
 load_gust()
 {
-    echo "I:Variant-Script: Loaded gust variant" | tee -a $LOG_PATH
+    echo "I:variant-script: Loaded gust variant" | tee -a $LOG_PATH
     setdevicename "gust"
     setdevicemodel "POCO C64"
 }
